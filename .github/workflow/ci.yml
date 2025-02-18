@@ -3,11 +3,10 @@ name: "sample react ci pipline / workflow"
 on:
   push:
      branches:
-           - main
            - master
 
 jobs:
-   build-and-test:
+   build-and-testS:
       runs-on: ubuntu-latest
 
       steps:
