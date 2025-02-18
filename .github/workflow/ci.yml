@@ -6,12 +6,15 @@ on:
            - master
 
 jobs:
-   build-and-testS:
+   build-and-test:
       runs-on: ubuntu-latest
 
       steps:
-         - name: "setup node js"
+         - name: "Setup Node Js"
            uses: actions/setup-node@v4
            with:
               node-version: '21'
+
+         - name: "Check node version"
+           run: node --version
 
